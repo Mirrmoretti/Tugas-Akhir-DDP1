@@ -1,17 +1,17 @@
-# CyberShield: Phone Simulator 🛡️📱
+# CyberShield: Phone Simulator
 ### Game Simulasi Edukasi Kesadaran Anti-Penipuan Digital (Scam Awareness)
 **Tugas Akhir Mata Kuliah: Dasar-Dasar Pemrograman 1 (DDP 1)**
 
 ---
 
-## 📌 Latar Belakang & Deskripsi Proyek
+## Latar Belakang & Deskripsi Proyek
 Kejahatan siber berbasis manipulasi psikologis (*social engineering*) dan rekayasa perangkat lunak jahat (*malware*) semakin marak menyasar masyarakat Indonesia. Modus seperti pengiriman file berformat **.apk** berkedok kurir paket/undangan pernikahan, pencurian kode OTP perbankan, penipuan lowongan kerja paruh waktu berbayar, hingga tautan phishing undian palsu telah merugikan ribuan korban.
 
 **CyberShield: Phone Simulator** adalah permainan simulasi smartphone interaktif berbasis GUI (**Tkinter**) yang dirancang untuk melatih naluri dan literasi keamanan digital publik. Pemain berperan sebagai pengguna ponsel yang menerima berbagai pesan masuk dan harus menentukan tindakan terbaik dengan menganalisis tanda-tanda bahaya (*red flags*). Setiap keputusan berdampak langsung pada **Saldo Tabungan** dan **Tingkat Kewaspadaan (Awareness)** pemain.
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 1. **Simulasi Tampilan Smartphone Modern:**
    - Status bar dinamis: Jam, baterai, sinyal 4G, saldo tabungan, dan bar kewaspadaan (*trust/awareness meter*).
    - Antarmuka ruang obrolan (*chat bubble*) dengan identitas pengirim, tag keamanan, waktu, dan pratinjau lampiran file/link.
@@ -33,7 +33,7 @@ Kejahatan siber berbasis manipulasi psikologis (*social engineering*) dan rekaya
 
 ---
 
-## 💻 Penerapan Konsep Pemrograman DDP 1
+##Penerapan Konsep Pemrograman DDP 1
 Proyek ini mengimplementasikan konsep-konsep inti yang diajarkan pada mata kuliah Dasar-Dasar Pemrograman 1:
 
 | Konsep DDP 1 | Implementasi dalam Kode |
@@ -47,7 +47,7 @@ Proyek ini mengimplementasikan konsep-konsep inti yang diajarkan pada mata kulia
 
 ---
 
-## 📂 Struktur Direktori Proyek
+##Struktur Direktori Proyek
 
 ```text
 Tugas-Akhir-DDP1/
@@ -78,7 +78,7 @@ Tugas-Akhir-DDP1/
 
 ---
 
-## 🚀 Cara Menjalankan Game
+## Cara Menjalankan Game
 
 ### Opsi 1: Lewat PyCharm
 1. Buka folder proyek `Tugas-Akhir-DDP1` di **PyCharm**.
@@ -93,7 +93,7 @@ python main.py
 
 ---
 
-## 🎮 Panduan Bermain
+## Panduan Bermain
 1. Masukkan nama kamu di halaman depan, lalu klik **Mulai Simulasi Ponsel**.
 2. Di setiap kasus, baca pesan teks, nomor pengirim, serta file/link lampiran dengan seksama.
 3. Pilih salah satu dari tindakan yang tersedia:
