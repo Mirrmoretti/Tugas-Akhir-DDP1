@@ -2,4 +2,4 @@
 (Deskripsi Sementara)
 Project Based Learning.
 
-Creating a game to spread awareness to general public to not get scammed basically
+Creating a game in order to spread awareness for the general public to not get scammed (simplified)
