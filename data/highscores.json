@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Budi Waspada",
+        "score": 850,
+        "savings": 5000000,
+        "awareness": 95,
+        "correct": 7,
+        "traps": 0,
+        "status": "completed",
+        "date": "2026-11-08 14:20"
+    },
+    {
+        "name": "Siti Cyber",
+        "score": 620,
+        "savings": 4500000,
+        "awareness": 80,
+        "correct": 6,
+        "traps": 1,
+        "status": "completed",
+        "date": "2026-11-08 16:45"
+    }
+]

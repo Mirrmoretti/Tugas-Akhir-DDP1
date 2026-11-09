@@ -1,0 +1,378 @@
+[
+  {
+    "id": "scam_01_apk_kurir",
+    "category": "Modus Malware / APK",
+    "sender_name": "Kurir J&T Express Kilat",
+    "sender_number": "+62 822-1092-8821",
+    "sender_tag": "Nomor Tidak Dikenal",
+    "avatar_icon": "📦",
+    "messages": [
+      "Selamat siang Kak, ada paket Anda dari toko online tertahan di sorting hub.",
+      "Alamat rumah kurang lengkap dan paket tidak bisa kami antar hari ini.",
+      "Silakan unduh dan buka foto resi pengiriman berikut untuk verifikasi paket:"
+    ],
+    "attachment": {
+      "name": "Foto_Resi_Paket_JNT.apk",
+      "type": "apk",
+      "size": "5.4 MB"
+    },
+    "choices": [
+      {
+        "text": "1. Unduh dan Buka File Foto_Resi_Paket_JNT.apk",
+        "outcome_type": "trap",
+        "feedback_title": "⚠️ Terjebak! Malware Terpasang di Ponselmu",
+        "feedback_message": "Kamu membuka file .apk (aplikasi Android) yang menyamar sebagai foto resi. Aplikasi ini adalah spyware/RAT yang menyadap SMS OTP m-banking kamu!",
+        "money_change": -2500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Ekstensi file berakhiran '.apk', bukan format gambar (.jpg/.png) atau dokumen (.pdf)",
+          "Kurir resmi tidak pernah mengirim aplikasi untuk melihat resi",
+          "Nomor menggunakan WhatsApp biasa pribadi tanpa centang hijau resmi"
+        ],
+        "safety_tip": "Jangan pernah menginstal file .apk dari luar Google Play Store, terutama dari pesan chat asing."
+      },
+      {
+        "text": "2. Balas dan Tanyakan Nomor Resi Teks Aslinya",
+        "outcome_type": "cautious",
+        "feedback_title": "🛡️ Waspada, Tapi Masih Berinteraksi",
+        "feedback_message": "Pelaku mengabaikan pertanyaanmu dan terus memaksa kamu membuka file APK. Setidaknya kamu tidak mengunduh malware tersebut.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Pelaku mendesak agar file segera dibuka dengan dalih paket akan dibatalkan/diretur"
+        ],
+        "safety_tip": "Pengecekan resi paket selalu dilakukan secara mandiri di situs resmi ekspedisi atau aplikasi belanja online."
+      },
+      {
+        "text": "3. Blokir Pengirim & Cek Langsung di Aplikasi Marketplace",
+        "outcome_type": "success",
+        "feedback_title": "✅ Hebat! Keputusan Sangat Tepat",
+        "feedback_message": "Kamu berhasil menghindari jebakan malware kurir paket. Setelah kamu cek di aplikasi belanja resmi, paketmu ternyata diantar oleh kurir lain dan beralamat lengkap.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Ekstensi file mencurigakan (.apk)",
+          "Kurir resmi tidak meminta instal aplikasi pihak ketiga"
+        ],
+        "safety_tip": "Selalu verifikasi status pengiriman langsung lewat riwayat pesanan di e-commerce atau situs tracking resmi."
+      }
+    ]
+  },
+  {
+    "id": "scam_02_phishing_bank_otp",
+    "category": "Social Engineering & Phishing Bank",
+    "sender_name": "Customer Care Bank Mandiri / BCA",
+    "sender_number": "+62 895-3344-9900",
+    "sender_tag": "Bukan Akun Resmi",
+    "avatar_icon": "🏦",
+    "messages": [
+      "PEMBERITAHUAN RESMI NASABAH YTH:",
+      "Mulai tengah malam nanti, tarif transaksi antar bank mengalami kenaikan menjadi Rp 150.000 / bulan.",
+      "Jika Anda TIDAK SETUJU dan ingin mempertahankan tarif normal Rp 6.500, segera batalkan dengan membalas pesan ini atau sebutkan kode aktivasi pembatalan yang baru saja dikirim via SMS ke nomor Anda!"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Berikan Kode SMS yang Baru Masuk agar Tidak Kena Biaya Rp 150rb",
+        "outcome_type": "trap",
+        "feedback_title": "💸 Fatal! Akun M-Banking Berhasil Diambil Alih",
+        "feedback_message": "Kode yang kamu berikan ternyata adalah KODE OTP (One-Time Password) untuk login m-banking di perangkat penipu. Seluruh tabunganmu langsung ditransfer keluar!",
+        "money_change": -3000000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Pihak bank manapun TIDAK PERNAH meminta kode OTP, PIN, atau Password nasabah",
+          "Pesan menciptakan kepanikan semu (biaya mendadak 150 ribu/bulan) agar korban buru-buru bertindak",
+          "Nomor pengirim adalah nomor seluler GSM biasa (+62 895...), bukan hotline resmi bank"
+        ],
+        "safety_tip": "Jaga kerahasiaan Kode OTP seperti kode brankas pribadi. Jangan pernah berikan kepada siapapun, termasuk yang mengaku petugas bank!"
+      },
+      {
+        "text": "2. Hubungi Call Center Resmi Bank Lewat Nomor Terverifikasi",
+        "outcome_type": "success",
+        "feedback_title": "🌟 Pintar Sekali! Kamu Melindungi Tabunganmu",
+        "feedback_message": "Customer Service resmi bank mengonfirmasi bahwa pesan tersebut adalah hoaks dan modus penipuan sniffing OTP. Akunmu tetap aman.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Bank mengumumkan perubahan tarif hanya lewat website resmi dan kanal bersertifikat",
+          "Modus kenaikan tarif adalah skema social engineering klasik"
+        ],
+        "safety_tip": "Simpan nomor call center resmi bank di kontak ponselmu agar tidak mudah tertipu nomor seluler palsu."
+      },
+      {
+        "text": "3. Balas Marah-Marah dan Menolak Kenaikan Biaya",
+        "outcome_type": "cautious",
+        "feedback_title": "⚠️ Membalas Hanya Menandakan Nomor Aktif",
+        "feedback_message": "Penipu mengetahui nomor HP-mu aktif dan terus mencoba mengirim pesan provokatif lain. Untungnya kamu tidak membagikan kode rahasia apapun.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Membalas chat scammer membuat nomor Anda ditandai sebagai nomor aktif di database penipu"
+        ],
+        "safety_tip": "Lebih baik abaikan, blokir, dan laporkan nomor daripada meladeni obrolan penipu."
+      }
+    ]
+  },
+  {
+    "id": "scam_03_job_freelance",
+    "category": "Modus Lowongan Kerja Online (Job Scam)",
+    "sender_name": "HR Global Media Partner",
+    "sender_number": "+62 813-7722-6611",
+    "sender_tag": "Pesan Masuk Tanpa Undangan",
+    "avatar_icon": "💼",
+    "messages": [
+      "Halo kak! Kami melihat profil Anda sangat cocok untuk program Freelance Reviewer Digital kami.",
+      "Tugasnya sangat mudah: cukup Like dan Subscribe video YouTube yang kami bagikan, dibayar Rp 30.000 per tugas. Sehari bisa dapat Rp 300.000 - Rp 1.500.000!",
+      "Untuk mengaktifkan Misi Tingkat 1, silakan transfer deposit modal jaminan Rp 200.000 ke rekening bendahara kami. Nanti uang jaminan dikembalikan + komisi 30%!"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Deposit Rp 200.000 untuk Mencoba Peluang Kerja",
+        "outcome_type": "trap",
+        "feedback_title": "❌ Terjebak Skema Deposit Bodong!",
+        "feedback_message": "Setelah transfer, pelaku meminta deposit lanjutan yang lebih besar (Rp 1.000.000) dengan alasan 'misi belum selesai'. Uangmu tidak pernah bisa ditarik kembali!",
+        "money_change": -1000000,
+        "awareness_change": -20,
+        "red_flags": [
+          "Pekerjaan resmi TIDAK PERNAH memungut biaya pendaftaran atau deposit jaminan",
+          "Menjanjikan bayaran yang tidak masuk akal hanya untuk tugas sepele (like/subscribe)",
+          "Rekening tujuan adalah rekening perorangan pribadi, bukan PT / perusahaan resmi"
+        ],
+        "safety_tip": "Karier sah membayar keringat Anda, bukan meminta uang Anda sebagai syarat bekerja."
+      },
+      {
+        "text": "2. Tolak dan Segera Laporkan Akun sebagai Penipuan",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Analisis Tajam! Uangmu Selamat",
+        "feedback_message": "Kamu menyadari tanda-tanda skema Ponzi berkedok lowongan freelance. Tabunganmu tetap utuh dan aman.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Tawaran pekerjaan datang tiba-tiba tanpa Anda pernah melamar",
+          "Adanya syarat deposit uang di muka"
+        ],
+        "safety_tip": "Cari lowongan pekerjaan hanya melalui portal tepercaya seperti JobStreet, LinkedIn, atau situs karier resmi."
+      }
+    ]
+  },
+  {
+    "id": "legit_04_pesan_sah",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "Budi Santoso (Teman Sekelas)",
+    "sender_number": "+62 812-3456-7890",
+    "sender_tag": "Kontak Tersimpan di Buku Telepon",
+    "avatar_icon": "🎓",
+    "messages": [
+      "Halo bro! Tugas presentasi DDP 1 kelompok kita sudah selesai aku gabungkan di Google Docs.",
+      "Nanti sore jam 16.00 kita gladi bersih presentasi di ruang lab komputer ya?",
+      "Tolong kabari kalau kamu sudah baca pesan ini."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Balas: 'Siap Budi, nanti jam 16.00 aku datang ke Lab!'",
+        "outcome_type": "success",
+        "feedback_title": "🤝 Tepat! Ini adalah Pesan Sah",
+        "feedback_message": "Hebat! Kamu bisa membedakan mana pesan scam dan mana komunikasi nyata. Tidak ada permintaan uang, tidak ada link aneh, dan kontak memang temanmu.",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags! Pengirim ada di buku kontak, bahasanya wajar, dan topiknya relevan"
+        ],
+        "safety_tip": "Waspada bukan berarti paranoid terhadap semua orang. Perhatikan konteks dan bukti dalam pesan."
+      },
+      {
+        "text": "2. Langsung Blokir Budi karena Mengira Dia Penipu",
+        "outcome_type": "trap",
+        "feedback_title": "😅 Ups! Kamu Terlalu Paranoid",
+        "feedback_message": "Kamu memblokir teman sekelompokmu sendiri! Presentasi tugasmu jadi berantakan karena miskomunikasi.",
+        "money_change": 0,
+        "awareness_change": -10,
+        "red_flags": [
+          "Jangan asal memblokir tanpa memeriksa apakah ada indikasi penipuan atau tidak"
+        ],
+        "safety_tip": "Analisis pesan secara objektif: apakah ada link asing, permintaan uang mendesak, atau file janggal?"
+      }
+    ]
+  },
+  {
+    "id": "scam_05_undangan_pernikahan_apk",
+    "category": "Modus Malware / APK",
+    "sender_name": "Reza & Linda (Pernikahan)",
+    "sender_number": "+62 878-9901-2211",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "💌",
+    "messages": [
+      "Assalamu'alaikum Wr. Wb. Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Teman-teman untuk menghadiri akad dan resepsi pernikahan kami.",
+      "Mohon doa restu dan kehadirannya.",
+      "Detail lokasi dan jadwal lengkap ada pada Surat Undangan Digital berikut:"
+    ],
+    "attachment": {
+      "name": "Surat_Undangan_Pernikahan_Digital.apk",
+      "type": "apk",
+      "size": "6.8 MB"
+    },
+    "choices": [
+      {
+        "text": "1. Buka File Undangan Pernikahan .apk",
+        "outcome_type": "trap",
+        "feedback_title": "💥 HP Terinfeksi Trojan Banking!",
+        "feedback_message": "Undangan digital asli biasanya berupa tautan web browser (misal: kondangan.me) atau gambar, BUKAN file aplikasi (.apk). Malware ini mencuri data pribadi dan PIN transaksi!",
+        "money_change": -2000000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Undangan berformat .apk (Android Application Package)",
+          "Pengirim tidak menyebutkan nama lengkap korban secara personal",
+          "Ukuran file mencurigakan untuk sekadar teks undangan"
+        ],
+        "safety_tip": "Undangan pernikahan digital berbasis web dibuka lewat browser biasa, tidak membutuhkan izin instalasi aplikasi."
+      },
+      {
+        "text": "2. Hapus Pesan & Laporkan Nomor ke Kominfo / Operator",
+        "outcome_type": "success",
+        "feedback_title": "🎯 Pilihan Cerdas! Kamu Kebal Tipuan APK",
+        "feedback_message": "Kamu berhasil menyelamatkan perangkatmu dari malware pencuri SMS. Langkah melaporkan nomor juga melindungi orang lain.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Modus klasik penyebaran Trojan via file APK berkedok undangan nikah"
+        ],
+        "safety_tip": "Kamu dapat melaporkan nomor penipuan ke layanan resmi aduankonten.id atau fitur spam di aplikasi WhatsApp."
+      }
+    ]
+  },
+  {
+    "id": "scam_06_impersonation_teman",
+    "category": "Pencatutan Identitas (Impersonation)",
+    "sender_name": "Dimas (Ganti Nomor Baru)",
+    "sender_number": "+62 857-1122-3344",
+    "sender_tag": "Menggunakan Foto Profil Teman",
+    "avatar_icon": "🙋‍♂️",
+    "messages": [
+      "Bro! Ini Dimas. Nomor lamaku hangus gara-gara HP kecopetan di halte bus tadi pagi.",
+      "Ini aku lagi di bengkel motor ganti ban pecah, tapi kartu ATM-ku juga hilang di dompet.",
+      "Bisa tolong talangi transfer 500rb dulu gak ke rekening bengkel? Nanti sore pas sampai rumah langsung kuganti cash."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Langsung Transfer Rp 500.000 karena Kasihan pada Teman",
+        "outcome_type": "trap",
+        "feedback_title": "💔 Kena Modus Pembajakan Identitas!",
+        "feedback_message": "Penipu mencuri foto profil Dimas dari media sosial dan mengarang cerita darurat. Dimas yang asli sama sekali tidak kehilangan HP atau kartu ATM!",
+        "money_change": -500000,
+        "awareness_change": -20,
+        "red_flags": [
+          "Nomor baru mengaku kerabat dekat yang sedang dalam kondisi darurat",
+          "Mendesak untuk segera mentransfer ke rekening pihak ketiga (bengkel)",
+          "Memanfaatkan rasa iba korban agar tidak sempat berpikir jernih"
+        ],
+        "safety_tip": "Sebelum mengirim uang ke orang terdekat dengan nomor baru, SELALU hubungi kontak lamanya atau telepon langsung suara untuk verifikasi!"
+      },
+      {
+        "text": "2. Telepon Suara Langsung atau Tanya Pertanyaan Pribadi yang Cuma Dimas Tahu",
+        "outcome_type": "success",
+        "feedback_title": "🔍 Investigasi Sempurna!",
+        "feedback_message": "Saat kamu telepon balik atau menanyakan nama dosen wali di kampus, penipu langsung mematikan panggilan dan memblokirmu. Tipuannya gagal total!",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Scammer enggan menerima panggilan suara langsung dan selalu mencari alasan"
+        ],
+        "safety_tip": "Gunakan teknik pertanyaan verifikasi rahasia (shared secret) saat ada yang mengaku kerabat meminta bantuan finansial darurat."
+      }
+    ]
+  },
+  {
+    "id": "scam_07_undian_hadiah_palsu",
+    "category": "Phishing Link / Hadiah Undian",
+    "sender_name": "Shopee Indonesia Rewards",
+    "sender_number": "+62 838-5544-2211",
+    "sender_tag": "Bukan Kanal Terverifikasi",
+    "avatar_icon": "🎁",
+    "messages": [
+      "SELAMAT! Nomor WhatsApp Anda terpilih sebagai Pemenang Utama Pesta Kilau Shopee Berkah.",
+      "Anda berhak mendapatkan Hadiah Uang Tunai Rp 35.000.000 & 1 Unit iPhone 15 Pro.",
+      "Klaim hadiah Anda dalam waktu 1x24 jam sebelum hangus melalui portal resmi di bawah:"
+    ],
+    "attachment": {
+      "name": "https://shopee-klaim-hadiah-resmi2026.weeblysite.com",
+      "type": "link",
+      "size": "Tautan Website"
+    },
+    "choices": [
+      {
+        "text": "1. Klik Link dan Masukkan Nomor HP serta PIN Akun untuk Klaim",
+        "outcome_type": "trap",
+        "feedback_title": "🪤 Terjerat Situs Web Phishing!",
+        "feedback_message": "Tautan itu adalah situs tiruan (phishing). Data akun dan PIN ShopeePay yang kamu ketik langsung terekam oleh penipu dan saldo dompet digitalmu dikuras habis!",
+        "money_change": -1500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Domain situs bukan domain resmi (.shopee.co.id), melainkan hosting gratisan (weeblysite.com)",
+          "Undian resmi tidak pernah dipungut biaya atau meminta pengisian PIN/kata sandi",
+          "Pajak hadiah resmi selalu ditanggung penyelenggara atau dipotong langsung secara sah"
+        ],
+        "safety_tip": "Perhatikan baik-baik alamat URL di browser. Domain resmi perusahaan ternama tidak pernah menggunakan domain gratisan atau imbuhan aneh."
+      },
+      {
+        "text": "2. Cek Pengumuman Pemenang di Tab Notifikasi Aplikasi Asli Shopee",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Verifikasi Juara!",
+        "feedback_message": "Di aplikasi resmi Shopee, tidak ada riwayat bahwa kamu memenangkan undian apapun. Penipuan berhasil kamu hindari dengan mudah.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Pengumuman pemenang resmi selalu ada di dalam aplikasi e-commerce asli, bukan via WhatsApp dari nomor pribadi"
+        ],
+        "safety_tip": "Abaikan segala SMS atau WhatsApp yang menyatakan Anda memenangkan undian jika Anda tidak pernah mendaftar undian tersebut."
+      }
+    ]
+  },
+  {
+    "id": "scam_08_surat_tilang_etle",
+    "category": "Modus Malware / APK",
+    "sender_name": "Kepolisian Korlantas ETLE",
+    "sender_number": "+62 821-6655-4433",
+    "sender_tag": "Catut Lembaga Negara",
+    "avatar_icon": "👮‍♂️",
+    "messages": [
+      "PEMBERITAHUAN PELANGGARAN LALU LINTAS (ETLE):",
+      "Kendaraan bermotor Anda terekam kamera ETLE melakukan pelanggaran batas kecepatan dan tidak memakai sabuk pengaman.",
+      "Surat tilang resmi dan foto bukti pelanggaran telah kami lampirkan di bawah ini. Harap segera konfirmasi sebelum STNK diblokir:"
+    ],
+    "attachment": {
+      "name": "Surat_Tilang_ETLE_Polda.apk",
+      "type": "apk",
+      "size": "7.1 MB"
+    },
+    "choices": [
+      {
+        "text": "1. Unduh dan Pasang Surat_Tilang_ETLE_Polda.apk",
+        "outcome_type": "trap",
+        "feedback_title": "🚨 Penipuan Pencatutan Institusi Polri!",
+        "feedback_message": "Kepolisian Republik Indonesia TIDAK PERNAH mengirimkan surat tilang elektronik lewat file .apk di WhatsApp! Ponselmu kini terinfeksi spyware.",
+        "money_change": -2000000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Polri mengirim surat konfirmasi tilang fisik lewat pos resmi ke alamat pemilik kendaraan atau cek di website resmi etle-korlantas.info",
+          "File berformat .apk yang berbahaya bagi sistem Android"
+        ],
+        "safety_tip": "Waspadai pesan yang mencatut nama institusi penegak hukum yang meminta instalasi aplikasi secara tiba-tiba."
+      },
+      {
+        "text": "2. Laporkan dan Cek Nopol di Portal Resmi etle-korlantas.info",
+        "outcome_type": "success",
+        "feedback_title": "🏆 Warga Melek Digital Teladan!",
+        "feedback_message": "Kamu memeriksa pelat nomor kendaraanmu di portal resmi Korlantas dan terbukti tidak ada pelanggaran. Kamu berhasil melindungi data dan uangmu!",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Institusi pemerintah tidak mengirim file .apk kepada masyarakat via chat pribadi"
+        ],
+        "safety_tip": "Gunakan kanal resmi pemerintah (.go.id) untuk mengecek administrasi hukum dan perpajakan."
+      }
+    ]
+  }
+]
