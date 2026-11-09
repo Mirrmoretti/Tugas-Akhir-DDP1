@@ -1,10 +1,12 @@
 """
 Layar Papan Skor (Leaderboard Screen)
-Menampilkan daftar skor tertinggi yang tersimpan di file data/highscores.json (File I/O).
+Menampilkan daftar skor tertinggi yang tersimpan 100% LOKAL di komputer (File I/O).
+Bebas dari server / koneksi internet luar.
 Menggunakan konsep OOP (tk.Frame).
 """
 
 import tkinter as tk
+from tkinter import messagebox
 from config import (
     COLOR_SCREEN_BG, COLOR_STATUS_BAR, COLOR_CARD, COLOR_CARD_LIGHT,
     COLOR_PRIMARY, COLOR_PRIMARY_HOVER, COLOR_SUCCESS, COLOR_WARNING, COLOR_DANGER,
@@ -14,7 +16,7 @@ from config import (
 from models.game_state import GameState
 
 class LeaderboardScreen(tk.Frame):
-    """Layar papan skor dan riwayat permainan."""
+    """Layar papan skor dan riwayat permainan lokal."""
 
     def __init__(self, parent, controller):
         super().__init__(parent, bg=COLOR_SCREEN_BG)
@@ -27,25 +29,57 @@ class LeaderboardScreen(tk.Frame):
         container.pack(fill="both", expand=True)
 
         # Header
-        lbl_icon = tk.Label(container, text="🏆", font=("Segoe UI Emoji", 32), bg=COLOR_SCREEN_BG)
-        lbl_icon.pack(pady=(5, 0))
+        lbl_icon = tk.Label(container, text="🏆", font=("Segoe UI Emoji", 30), bg=COLOR_SCREEN_BG)
+        lbl_icon.pack(pady=(2, 0))
 
         lbl_title = tk.Label(
             container, 
-            text="Papan Skor Waspada Siber", 
+            text="Papan Skor Lokal", 
             font=FONT_TITLE, 
             fg=COLOR_PRIMARY, 
             bg=COLOR_SCREEN_BG
         )
-        lbl_title.pack(pady=(2, 12))
+        lbl_title.pack(pady=(2, 2))
+
+        # Badge Penyimpanan Lokal / Offline
+        lbl_local_badge = tk.Label(
+            container,
+            text="💾 Tersimpan Lokal di File: data/local_highscores.json (Offline)",
+            font=FONT_TINY,
+            fg="#6EE7B7",
+            bg="#064E3B",
+            padx=8,
+            pady=3
+        )
+        lbl_local_badge.pack(pady=(0, 10))
 
         # Kontainer List Skor
         self.scores_container = tk.Frame(container, bg=COLOR_CARD, padx=12, pady=12)
-        self.scores_container.pack(fill="both", expand=True, pady=(0, 15))
+        self.scores_container.pack(fill="both", expand=True, pady=(0, 10))
+
+        # Button row bawah
+        bottom_frame = tk.Frame(container, bg=COLOR_SCREEN_BG)
+        bottom_frame.pack(fill="x", side="bottom")
+
+        # Tombol Reset Skor Lokal
+        btn_reset = tk.Button(
+            bottom_frame,
+            text="🗑️ Reset Skor Lokal",
+            font=FONT_SMALL,
+            bg="#7F1D1D",
+            fg="#FCA5A5",
+            activebackground="#991B1B",
+            activeforeground="#FFFFFF",
+            bd=0,
+            relief="flat",
+            cursor="hand2",
+            command=self.confirm_reset_scores
+        )
+        btn_reset.pack(fill="x", ipady=4, pady=(0, 6))
 
         # Tombol Kembali
         btn_back = tk.Button(
-            container,
+            bottom_frame,
             text="⬅️ Kembali ke Menu Utama",
             font=FONT_BODY_BOLD,
             bg=COLOR_PRIMARY,
@@ -56,7 +90,18 @@ class LeaderboardScreen(tk.Frame):
             cursor="hand2",
             command=self.controller.show_start_screen
         )
-        btn_back.pack(fill="x", ipady=8, side="bottom")
+        btn_back.pack(fill="x", ipady=8)
+
+    def confirm_reset_scores(self):
+        """Konfirmasi sebelum menghapus file skor lokal."""
+        confirm = messagebox.askyesno(
+            "Konfirmasi Reset",
+            "Apakah kamu yakin ingin mengosongkan riwayat skor lokal dari komputermu?"
+        )
+        if confirm:
+            GameState.clear_local_high_scores()
+            self.refresh_scores()
+            messagebox.showinfo("Berhasil", "Skor lokal berhasil dibersihkan!")
 
     def refresh_scores(self):
         """Membaca ulang skor dari JSON dan menampilkan ke layar."""

@@ -28,8 +28,9 @@ Kejahatan siber berbasis manipulasi psikologis (*social engineering*) dan rekaya
    - Setiap kali pemain mengambil keputusan, muncul dialog penjelasan yang membedah *tanda bahaya (red flags)* dan *tips keamanan nyata*.
 4. **Sistem Evaluasi & Rapor Akhir:**
    - Menghitung gelar literasi pemain (misal: *Cyber Security Sentinel*, *Warga Digital Waspada*, atau *Korban Penipuan Digital*).
-5. **Penyimpanan Skor Permanen (File I/O Leaderboard):**
-   - Menyimpan 10 skor tertinggi ke file `data/highscores.json`.
+5. **Penyimpanan Skor Permanen (File I/O Lokal & Offline):**
+   - Menyimpan 10 skor tertinggi secara **100% lokal** di komputer pemain ke dalam berkas [`data/local_highscores.json`](file:///c:/Users/Fatta/Desktop/Tugas-Akhir-DDP1/data/local_highscores.json).
+   - Bebas dari ketergantungan server/internet, dan dilengkapi fitur reset skor lokal.
 
 ---
 
@@ -41,7 +42,7 @@ Proyek ini mengimplementasikan konsep-konsep inti yang diajarkan pada mata kulia
 | **Object-Oriented Programming (OOP)** | Pembuatan class `Choice`, `Scenario`, `GameState`, serta pewarisan (*inheritance*) class `tk.Frame` dan `tk.Tk` pada komponen antarmuka antarlayar. |
 | **Modularitas & Abstraksi** | Pemisahan kode menjadi package `models`, `ui`, `screens`, dan file `config.py` agar bersih dan mudah dirawat. |
 | **Struktur Data (`dict`, `list`, `tuple`)** | Pengelolaan kumpulan pilihan aksi, daftar riwayat tindakan, dan parsing JSON ke objek Python. |
-| **File I/O (JSON Handling)** | Membaca berkas skenario (`data/scenarios.json`) dan membaca/menulis data peringkat (`data/highscores.json`). |
+| **File I/O (JSON Handling)** | Membaca berkas skenario (`data/scenarios.json`) dan membaca/menulis data skor lokal (`data/local_highscores.json`). |
 | **Kontrol Alur (Branching & Looping)** | Percabangan `if/elif/else` untuk validasi skor dan status permainan; perulangan `for` untuk merender daftar pesan chat dan tombol pilihan. |
 | **Penanganan Eksepsi (`try-except`)** | Menangani error saat pembacaan file dan eksekusi antarmuka GUI. |
 
@@ -63,7 +64,7 @@ Tugas-Akhir-DDP1/
 │
 ├── data/                       # Penyimpanan berkas data (File I/O)
 │   ├── scenarios.json          # Dataset 8 kasus penipuan siber & pesan sah
-│   └── highscores.json         # Penyimpanan leaderboard skor pemain
+│   └── local_highscores.json   # Penyimpanan skor lokal offline pemain
 │
 └── ui/                         # Modul antarmuka GUI (Tkinter)
     ├── __init__.py

@@ -132,7 +132,10 @@ class GameState:
             return ("Perlu Banyak Belajar Waspada", "🟡 Kamu masih sempat terjebak pada beberapa modus penipuan.")
 
     def save_high_score(self):
-        """Menyimpan skor ke file highscores.json (File I/O)."""
+        """
+        Menyimpan skor secara LOKAL ke file data/local_highscores.json (File I/O).
+        100% tersimpan di komputer pengguna tanpa server / koneksi internet.
+        """
         scores = self.get_high_scores()
         
         new_entry = {
@@ -158,7 +161,9 @@ class GameState:
 
     @staticmethod
     def get_high_scores() -> list:
-        """Membaca daftar leaderboard dari file JSON."""
+        """
+        Membaca daftar skor dari file lokal data/local_highscores.json.
+        """
         if not os.path.exists(DATA_HIGHSCORES_PATH):
             return []
         try:
@@ -166,3 +171,16 @@ class GameState:
                 return json.load(file)
         except Exception:
             return []
+
+    @staticmethod
+    def clear_local_high_scores() -> bool:
+        """
+        Menghapus riwayat skor lokal dari komputer pengguna.
+        """
+        try:
+            if os.path.exists(DATA_HIGHSCORES_PATH):
+                with open(DATA_HIGHSCORES_PATH, "w", encoding="utf-8") as file:
+                    json.dump([], file, indent=4)
+            return True
+        except Exception:
+            return False

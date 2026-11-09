@@ -43,6 +43,11 @@ INITIAL_AWARENESS = 70           # 70% tingkat kewaspadaan awal (0 - 100)
 MAX_AWARENESS = 100
 MIN_AWARENESS = 0
 
-# Path Data
-DATA_SCENARIOS_PATH = "data/scenarios.json"
-DATA_HIGHSCORES_PATH = "data/highscores.json"
+# Path Data Lokal (100% Offline di Komputer / Mesin Pengguna)
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+DATA_SCENARIOS_PATH = os.path.join(DATA_DIR, "scenarios.json")
+DATA_HIGHSCORES_PATH = os.path.join(DATA_DIR, "local_highscores.json")
+

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Fatta",
+        "score": 950,
+        "savings": 5000000,
+        "awareness": 100,
+        "correct": 8,
+        "traps": 0,
+        "status": "completed",
+        "date": "2026-11-09 10:13"
+    },
+    {
+        "name": "Budi Waspada",
+        "score": 820,
+        "savings": 4500000,
+        "awareness": 90,
+        "correct": 7,
+        "traps": 0,
+        "status": "completed",
+        "date": "2026-11-08 14:20"
+    }
+]
