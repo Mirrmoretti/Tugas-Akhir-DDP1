@@ -5,12 +5,16 @@ Mencakup File I/O untuk memuat skenario dan menyimpan leaderboard.
 
 import json
 import os
+import random
 from datetime import datetime
 from config import (
     INITIAL_SAVINGS, INITIAL_AWARENESS, MAX_AWARENESS, MIN_AWARENESS,
     DATA_SCENARIOS_PATH, DATA_HIGHSCORES_PATH
 )
 from models.scenario import Scenario, Choice
+
+# Jumlah skenario yang dimainkan per sesi (dipilih acak dari seluruh pool)
+SCENARIOS_PER_GAME = 8
 
 class GameState:
     """Mengelola status pemain, alur permainan, dan persistensi data (File I/O)."""
@@ -35,20 +39,30 @@ class GameState:
         self.load_scenarios()
 
     def load_scenarios(self):
-        """Membaca skenario kasus dari file JSON (Materi File I/O)."""
+        """
+        Membaca skenario kasus dari file JSON (Materi File I/O).
+        Mengacak urutan dan memilih subset acak setiap sesi permainan baru
+        agar pertanyaan selalu berbeda-beda setiap kali dimainkan.
+        """
         if not os.path.exists(DATA_SCENARIOS_PATH):
             raise FileNotFoundError(f"File skenario tidak ditemukan di {DATA_SCENARIOS_PATH}")
             
         with open(DATA_SCENARIOS_PATH, "r", encoding="utf-8") as file:
             data = json.load(file)
-            self.scenarios = [Scenario.from_dict(item) for item in data]
+            all_scenarios = [Scenario.from_dict(item) for item in data]
+
+        # Acak urutan seluruh skenario
+        random.shuffle(all_scenarios)
+
+        # Pilih sejumlah SCENARIOS_PER_GAME skenario (atau semua jika pool lebih kecil)
+        self.scenarios = all_scenarios[:SCENARIOS_PER_GAME]
 
     @property
-    def current_scenario(self) -> Scenario:
+    def current_scenario(self) -> Scenario | None:
         """Mengambil skenario yang sedang aktif."""
         if 0 <= self.current_index < len(self.scenarios):
             return self.scenarios[self.current_index]
-        return None
+        return
 
     @property
     def total_scenarios(self) -> int:
