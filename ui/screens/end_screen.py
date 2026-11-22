@@ -143,7 +143,7 @@ class EndScreen(tk.Frame):
             p_lbl = tk.Label(
                 tips_box, 
                 text=p, 
-                font=FONT_TITLE, 
+                font=FONT_SMALL, 
                 fg=COLOR_TEXT_SECONDARY, 
                 bg="#0F172A",
                 anchor="w",

@@ -374,5 +374,991 @@
         "safety_tip": "Gunakan kanal resmi pemerintah (.go.id) untuk mengecek administrasi hukum dan perpajakan."
       }
     ]
+  },
+  {
+    "id": "scam_09_investasi_crypto_bodong",
+    "category": "Penipuan Investasi (Investment Scam)",
+    "sender_name": "Admin VIP Profit Trading",
+    "sender_number": "+62 819-5577-3300",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "📈",
+    "messages": [
+      "Selamat malam Kak! Saya dari komunitas trading VIP. Kami punya bot otomatis yang menjamin profit 15-30% PER HARI dari investasi crypto.",
+      "Sudah ada 500+ member yang berhasil dan bukti transfernya bisa kami tunjukkan.",
+      "Modal awal sangat terjangkau: hanya Rp 500.000 untuk mulai passive income jutaan rupiah setiap minggu. Tertarik?"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Modal Rp 500.000 dan Ikut Komunitas Trading VIP",
+        "outcome_type": "trap",
+        "feedback_title": "📉 Kena Skema Ponzi Berkedok Crypto!",
+        "feedback_message": "Tidak ada bot yang bisa menjamin profit harian. Setelah modal masuk, pelaku meminta 'top-up' lagi untuk 'aktivasi level premium'. Uangmu lenyap!",
+        "money_change": -1500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Janji keuntungan pasti 15-30% per hari adalah mustahil dan ilegal menurut OJK",
+          "Investasi resmi terdaftar di Bappebti/OJK dan tidak menjanjikan return tetap",
+          "Bukti transfer yang ditampilkan bisa saja hasil rekayasa atau dari korban sebelumnya"
+        ],
+        "safety_tip": "Periksa legalitas investasi di situs resmi OJK (ojk.go.id) atau Bappebti. Jika return dijamin tinggi tanpa risiko, hampir pasti penipuan."
+      },
+      {
+        "text": "2. Tolak dan Periksa Legalitas di Website OJK",
+        "outcome_type": "success",
+        "feedback_title": "🧠 Investor Cerdas! Tabunganmu Aman",
+        "feedback_message": "Kamu mengecek daftar investasi ilegal di OJK dan menemukan nama komunitas ini sudah masuk daftar hitam. Kamu berhasil menghindari kerugian besar!",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Return investasi yang dijamin tinggi dan konsisten tanpa risiko adalah tanda utama penipuan"
+        ],
+        "safety_tip": "Gunakan situs investasialert.ojk.go.id untuk mengecek apakah suatu entitas investasi legal atau bodong."
+      },
+      {
+        "text": "3. Minta Bukti Izin Resmi dari OJK/Bappebti",
+        "outcome_type": "cautious",
+        "feedback_title": "🔎 Langkah Baik, Tapi Masih Kontak Penipu",
+        "feedback_message": "Pelaku mengirim dokumen izin palsu yang terlihat meyakinkan. Untungnya kamu belum transfer, tapi kamu masih dalam radar mereka.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Dokumen izin dari penipu bisa dipalsukan, selalu verifikasi langsung ke situs resmi regulator"
+        ],
+        "safety_tip": "Jangan percaya dokumen yang dikirim pelaku. Verifikasi langsung ke website resmi OJK atau Bappebti."
+      }
+    ]
+  },
+  {
+    "id": "scam_10_romance_scam",
+    "category": "Penipuan Percintaan (Romance Scam)",
+    "sender_name": "Jessica (Kenalan Baru di IG)",
+    "sender_number": "+62 831-6789-0012",
+    "sender_tag": "Kenalan Baru Online",
+    "avatar_icon": "💕",
+    "messages": [
+      "Hai sayang, aku Jessica yang kemarin kenalan di Instagram. Kamu orangnya baik banget ya 🥰",
+      "Aku lagi ada masalah besar nih... mama aku masuk rumah sakit mendadak dan butuh biaya operasi darurat.",
+      "Kamu bisa bantu pinjamkan Rp 2.000.000 dulu nggak? Nanti pasti aku ganti secepatnya. Aku cuma bisa percaya sama kamu 😢"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Rp 2.000.000 Karena Kasihan dan Sudah Merasa Dekat",
+        "outcome_type": "trap",
+        "feedback_title": "💔 Terjebak Romance Scam!",
+        "feedback_message": "Jessica adalah akun palsu yang membangun kedekatan emosional untuk memanipulasi korban. Setelah transfer, dia meminta lagi dengan alasan berbeda hingga uangmu habis.",
+        "money_change": -2000000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Baru kenal online sudah langsung curhat masalah keuangan dan minta pinjaman",
+          "Memanipulasi emosi dengan cerita sedih dan rasa percaya palsu",
+          "Tidak pernah mau video call atau bertemu langsung"
+        ],
+        "safety_tip": "Jangan pernah mengirim uang kepada orang yang baru kamu kenal secara online, sekuat apapun rasa kasihan atau ketertarikan."
+      },
+      {
+        "text": "2. Tolak dengan Halus dan Sarankan Dia Minta Bantuan Keluarga",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Bijaksana! Kamu Tidak Terbuai",
+        "feedback_message": "Kamu menyadari bahwa orang yang baru dikenal secara online tidak seharusnya langsung meminta uang dalam jumlah besar. Tabunganmu aman.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Romance scam membangun hubungan palsu untuk memeras korban secara emosional"
+        ],
+        "safety_tip": "Waspadai kenalan online yang terlalu cepat akrab dan kemudian meminta bantuan finansial."
+      },
+      {
+        "text": "3. Ajak Video Call Dulu untuk Memastikan Identitas",
+        "outcome_type": "cautious",
+        "feedback_title": "📱 Langkah Verifikasi yang Baik",
+        "feedback_message": "Jessica menolak video call dengan berbagai alasan. Kamu mulai curiga tapi masih meladeni obrolannya. Setidaknya uangmu selamat.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Penipu romance scam selalu menolak video call atau pertemuan langsung"
+        ],
+        "safety_tip": "Jika seseorang konsisten menolak komunikasi video atau tatap muka, ada kemungkinan besar identitasnya palsu."
+      }
+    ]
+  },
+  {
+    "id": "scam_11_qris_palsu",
+    "category": "Penipuan QRIS / Pembayaran Digital",
+    "sender_name": "Penjual Online di Marketplace",
+    "sender_number": "+62 856-9988-7766",
+    "sender_tag": "Nomor Penjual Online",
+    "avatar_icon": "🛒",
+    "messages": [
+      "Kak, barangnya ready stok! Harga special kalau transfer langsung di luar marketplace lho, diskon 40%!",
+      "Bayar via QRIS aja kak biar gampang. Ini QRIS pembayarannya:",
+      "Kalau sudah scan dan bayar, langsung kabari ya biar kami proses kirim hari ini juga!"
+    ],
+    "attachment": {
+      "name": "QRIS_Pembayaran_Toko.jpg",
+      "type": "image",
+      "size": "156 KB"
+    },
+    "choices": [
+      {
+        "text": "1. Scan QRIS dan Bayar di Luar Marketplace",
+        "outcome_type": "trap",
+        "feedback_title": "🪤 Tertipu QRIS Palsu!",
+        "feedback_message": "QRIS tersebut mengarah ke rekening pribadi penipu, bukan toko resmi. Transaksi di luar marketplace tidak dilindungi garansi apapun. Barangmu tidak akan pernah dikirim!",
+        "money_change": -800000,
+        "awareness_change": -20,
+        "red_flags": [
+          "Penjual mengarahkan transaksi keluar dari platform marketplace resmi",
+          "Diskon terlalu besar (40%) hanya jika bayar langsung",
+          "QRIS mengarah ke akun personal, bukan akun merchant terverifikasi"
+        ],
+        "safety_tip": "Selalu bertransaksi di dalam platform marketplace resmi agar dilindungi oleh garansi pembeli dan sistem escrow."
+      },
+      {
+        "text": "2. Tolak dan Tetap Belanja via Keranjang Resmi di Marketplace",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Pembeli Cerdas!",
+        "feedback_message": "Kamu memilih bertransaksi lewat jalur resmi yang dilindungi garansi marketplace. Setelah ditelusuri, akun penjual tersebut ternyata sudah banyak dilaporkan penipuan.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Transaksi di luar marketplace menghilangkan perlindungan konsumen"
+        ],
+        "safety_tip": "Jangan pernah membayar di luar sistem pembayaran resmi marketplace. Escrow melindungi uangmu sampai barang diterima."
+      }
+    ]
+  },
+  {
+    "id": "scam_12_wifi_publik_sniffing",
+    "category": "Keamanan Jaringan (Wi-Fi Sniffing)",
+    "sender_name": "Notifikasi Sistem HP",
+    "sender_number": "Sistem",
+    "sender_tag": "Perangkat Sendiri",
+    "avatar_icon": "📶",
+    "messages": [
+      "Kamu sedang di kafe dan menemukan jaringan Wi-Fi gratis tanpa password bernama 'FREE_WiFi_CAFE'.",
+      "Koneksi datamu habis dan kamu ingin membuka aplikasi m-banking untuk cek saldo dan transfer uang kuliah.",
+      "Apa yang akan kamu lakukan?"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Hubungkan ke WiFi Gratis dan Langsung Buka M-Banking",
+        "outcome_type": "trap",
+        "feedback_title": "🔓 Data M-Banking Tercuri via Evil Twin!",
+        "feedback_message": "Wi-Fi 'FREE_WiFi_CAFE' adalah jaringan palsu (Evil Twin) yang dibuat hacker. Semua data login m-banking yang kamu ketik terekam oleh penyerang!",
+        "money_change": -1500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Wi-Fi publik tanpa password sangat rentan terhadap serangan man-in-the-middle",
+          "Jaringan 'Evil Twin' meniru nama WiFi tempat umum untuk menjebak korban",
+          "Membuka aplikasi perbankan di jaringan tidak aman adalah risiko tinggi"
+        ],
+        "safety_tip": "Jangan pernah mengakses m-banking, e-wallet, atau memasukkan password di Wi-Fi publik tanpa VPN terpercaya."
+      },
+      {
+        "text": "2. Gunakan Data Seluler atau Tethering dari HP Teman untuk M-Banking",
+        "outcome_type": "success",
+        "feedback_title": "🔒 Keputusan Aman!",
+        "feedback_message": "Kamu memilih jaringan yang aman untuk mengakses data sensitif. Data perbankanmu terlindungi dari potensi sniffing.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Wi-Fi publik tanpa enkripsi WPA2/WPA3 tidak aman untuk transaksi keuangan"
+        ],
+        "safety_tip": "Untuk transaksi keuangan, selalu gunakan data seluler pribadi atau VPN terpercaya. Hindari Wi-Fi publik gratis."
+      },
+      {
+        "text": "3. Hubungkan WiFi Gratis tapi Hanya untuk Browsing Biasa, Bukan M-Banking",
+        "outcome_type": "cautious",
+        "feedback_title": "⚠️ Lumayan, Tapi Tetap Berisiko",
+        "feedback_message": "Kamu tidak membuka m-banking, tapi data browsing dan cookie masih bisa diintip oleh penyerang jaringan.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Meskipun tidak buka m-banking, browsing di WiFi tak aman bisa mengekspos session cookies"
+        ],
+        "safety_tip": "Jika terpaksa pakai WiFi publik, pastikan hanya akses situs HTTPS dan jangan login ke akun penting manapun."
+      }
+    ]
+  },
+  {
+    "id": "scam_13_sms_pajak_palsu",
+    "category": "Phishing SMS / Catut Instansi Pemerintah",
+    "sender_name": "DIRJEN PAJAK RI",
+    "sender_number": "+62 811-2233-4455",
+    "sender_tag": "Catut Lembaga Negara",
+    "avatar_icon": "🏛️",
+    "messages": [
+      "PERINGATAN: Nomor NPWP Anda terdeteksi memiliki TUNGGAKAN PAJAK sebesar Rp 12.500.000.",
+      "Jika tidak dilunasi dalam 2x24 jam, aset Anda akan DISITA dan rekening bank DIBEKUKAN oleh otoritas.",
+      "Segera lakukan pelunasan melalui kode virtual account berikut: VA 8810-2233-4455-6677. Hubungi kami jika memerlukan bantuan."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Bayar Segera ke Virtual Account agar Rekening Tidak Dibekukan",
+        "outcome_type": "trap",
+        "feedback_title": "🏛️ Terjebak Modus Catut DJP!",
+        "feedback_message": "DJP tidak pernah menagih pajak via WhatsApp atau SMS ke nomor pribadi. Virtual account tersebut milik penipu. Uangmu hilang tanpa bisa dikembalikan!",
+        "money_change": -2000000,
+        "awareness_change": -25,
+        "red_flags": [
+          "DJP mengirim surat tagihan pajak lewat pos resmi dan notifikasi di DJP Online, bukan WhatsApp",
+          "Ancaman pembekuan aset dalam 2x24 jam adalah taktik tekanan psikologis",
+          "Virtual account tujuan bukan milik kas negara"
+        ],
+        "safety_tip": "Tagihan pajak resmi hanya dikirim lewat surat atau muncul di akun DJP Online (pajak.go.id). Hubungi Kring Pajak 1500200 untuk verifikasi."
+      },
+      {
+        "text": "2. Abaikan dan Cek Langsung di Akun DJP Online (pajak.go.id)",
+        "outcome_type": "success",
+        "feedback_title": "✅ Warga Melek Hukum Digital!",
+        "feedback_message": "Kamu login ke akun DJP Online resmi dan ternyata tidak ada tunggakan pajak apapun. Pesan tersebut adalah penipuan murni.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Instansi pemerintah tidak memungut biaya lewat VA dari chat pribadi"
+        ],
+        "safety_tip": "Selalu verifikasi informasi perpajakan di situs resmi pajak.go.id atau hubungi Kring Pajak 1500200."
+      }
+    ]
+  },
+  {
+    "id": "legit_14_notif_bank_resmi",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "Bank BCA (Halo BCA)",
+    "sender_number": "1500888",
+    "sender_tag": "Nomor Resmi Terverifikasi",
+    "avatar_icon": "🏦",
+    "messages": [
+      "Yth. Nasabah BCA,",
+      "Transaksi berhasil: Debit Rp 150.000 di TOKOPEDIA pada 22/11/2026 pukul 14:32 WIB.",
+      "Sisa saldo: Rp 4.850.000. Jika merasa tidak melakukan transaksi ini, segera hubungi Halo BCA 1500888."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Ini Transaksi Saya, Abaikan Notifikasi",
+        "outcome_type": "success",
+        "feedback_title": "✅ Benar! Ini Notifikasi Bank Resmi",
+        "feedback_message": "Notifikasi transaksi dari nomor resmi bank (1500888) adalah fitur keamanan standar. Kamu memang baru saja belanja di Tokopedia.",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags. Nomor pengirim adalah hotline resmi BCA, format pesan standar, dan tidak meminta data apapun"
+        ],
+        "safety_tip": "Aktifkan notifikasi transaksi real-time di m-banking agar selalu tahu setiap pergerakan saldo."
+      },
+      {
+        "text": "2. Panik dan Langsung Blokir Kartu ATM",
+        "outcome_type": "cautious",
+        "feedback_title": "😅 Tidak Perlu Panik!",
+        "feedback_message": "Kamu memblokir kartumu padahal transaksi itu memang kamu yang melakukan. Sekarang kamu harus repot ke kantor cabang untuk aktivasi ulang.",
+        "money_change": 0,
+        "awareness_change": -5,
+        "red_flags": [
+          "Periksa dulu apakah transaksi tersebut memang dilakukan oleh kamu sebelum mengambil tindakan drastis"
+        ],
+        "safety_tip": "Sebelum memblokir kartu, cocokkan detail transaksi (nominal, merchant, waktu) dengan aktivitas belanjamu."
+      }
+    ]
+  },
+  {
+    "id": "scam_15_pinjol_ilegal",
+    "category": "Pinjaman Online Ilegal (Pinjol Scam)",
+    "sender_name": "DanaCair Instan - Pinjaman Kilat",
+    "sender_number": "+62 877-6655-4433",
+    "sender_tag": "SMS Blast Tidak Diundang",
+    "avatar_icon": "💳",
+    "messages": [
+      "PINJAMAN CAIR INSTAN tanpa ribet! KTP doang langsung cair Rp 20.000.000 ke rekeningmu!",
+      "Bunga ringan cuma 0,01% per hari. Tanpa BI Checking, tanpa slip gaji, tanpa agunan.",
+      "Klik link berikut untuk pengajuan instan (proses 5 menit): http://danacair-kilat.xyz/apply"
+    ],
+    "attachment": {
+      "name": "http://danacair-kilat.xyz/apply",
+      "type": "link",
+      "size": "Tautan Website"
+    },
+    "choices": [
+      {
+        "text": "1. Klik Link dan Ajukan Pinjaman, Butuh Uang Cepat",
+        "outcome_type": "trap",
+        "feedback_title": "💀 Terjerat Pinjol Ilegal!",
+        "feedback_message": "Aplikasi tersebut mengakses seluruh kontak, galeri foto, dan lokasi HP-mu. Bunga aslinya ternyata 1% PER HARI (365% per tahun!) dan debt collector meneror seluruh kontakmu!",
+        "money_change": -1000000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Pinjol resmi terdaftar di OJK dan tidak menawarkan via SMS blast",
+          "Bunga 0,01% per hari terdengar kecil tapi bisa dimanipulasi menjadi sangat besar",
+          "Domain .xyz bukan domain terpercaya untuk layanan keuangan",
+          "Akses seluruh kontak dan galeri foto adalah ciri khas pinjol ilegal"
+        ],
+        "safety_tip": "Cek daftar pinjol legal di situs OJK sebelum meminjam. Pinjol ilegal menyasar data pribadi dan melakukan teror penagihan."
+      },
+      {
+        "text": "2. Hapus SMS dan Blokir Nomor Pengirim",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Aman dari Jerat Pinjol Ilegal!",
+        "feedback_message": "Kamu menghindari jebakan pinjol ilegal yang bisa merusak kehidupan finansial dan sosialmu. Bagus!",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Pinjol legal tidak menawarkan jasa via SMS blast ke nomor acak"
+        ],
+        "safety_tip": "Jika membutuhkan pinjaman, gunakan hanya layanan yang terdaftar di OJK. Cek di ojk.go.id/fintech-lending."
+      }
+    ]
+  },
+  {
+    "id": "scam_16_akun_ig_diretas",
+    "category": "Pembajakan Akun Media Sosial",
+    "sender_name": "Pusat Bantuan Instagram",
+    "sender_number": "+62 899-1234-5678",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "📸",
+    "messages": [
+      "PERINGATAN KEAMANAN: Akun Instagram Anda @nama_kamu terdeteksi melanggar Pedoman Komunitas.",
+      "Akun akan DIHAPUS PERMANEN dalam 24 jam kecuali Anda melakukan verifikasi identitas.",
+      "Klik tautan berikut untuk verifikasi akun: https://meta-ig-verification.blogspot.com/verify"
+    ],
+    "attachment": {
+      "name": "https://meta-ig-verification.blogspot.com/verify",
+      "type": "link",
+      "size": "Tautan Website"
+    },
+    "choices": [
+      {
+        "text": "1. Klik Link dan Login dengan Username/Password Instagram",
+        "outcome_type": "trap",
+        "feedback_title": "🔓 Akun Instagrammu Dibajak!",
+        "feedback_message": "Situs blogspot palsu itu merekam kredensial loginmu. Penipu mengambil alih akunmu, mengganti password, dan menggunakannya untuk menipu followers-mu!",
+        "money_change": 0,
+        "awareness_change": -25,
+        "red_flags": [
+          "Instagram/Meta tidak pernah mengirim notifikasi keamanan via WhatsApp dari nomor pribadi",
+          "Domain blogspot.com bukan milik Meta/Instagram (instagram.com)",
+          "Ancaman penghapusan akun dalam 24 jam adalah tekanan psikologis"
+        ],
+        "safety_tip": "Periksa notifikasi keamanan hanya di dalam aplikasi Instagram resmi (Settings > Security). Aktifkan 2FA!"
+      },
+      {
+        "text": "2. Abaikan dan Cek Security Setting di Aplikasi Instagram Resmi",
+        "outcome_type": "success",
+        "feedback_title": "✅ Akun Aman! Phishing Gagal",
+        "feedback_message": "Kamu membuka aplikasi Instagram langsung dan tidak ada peringatan pelanggaran apapun. Kamu juga mengaktifkan autentikasi dua faktor (2FA) untuk keamanan ekstra.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Platform sosial media besar tidak mengirim peringatan keamanan lewat WhatsApp"
+        ],
+        "safety_tip": "Aktifkan Two-Factor Authentication (2FA) di semua akun media sosial untuk mencegah pembajakan."
+      }
+    ]
+  },
+  {
+    "id": "scam_17_modus_cod_barang_misterius",
+    "category": "Penipuan COD / Belanja Online",
+    "sender_name": "Kurir SiCepat",
+    "sender_number": "+62 812-7788-9900",
+    "sender_tag": "Nomor Tidak Dikenal",
+    "avatar_icon": "🚚",
+    "messages": [
+      "Kak, ada paket COD atas nama Anda. Total bayar Rp 350.000.",
+      "Paket dari pengirim 'Toko Elektronik Jakarta'. Silakan bayar ke kurir saat diterima.",
+      "Paket harus dibayar sekarang karena sudah sampai di depan rumah. Kalau ditolak dikenakan denda Rp 50.000 ya Kak."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Bayar Rp 350.000 ke Kurir karena Takut Kena Denda",
+        "outcome_type": "trap",
+        "feedback_title": "📦 Kena Modus Paket COD Misterius!",
+        "feedback_message": "Kamu tidak pernah memesan paket ini! Setelah dibuka, isinya hanya barang murahan seharga Rp 10.000. Tidak ada denda untuk menolak paket COD yang tidak kamu pesan.",
+        "money_change": -350000,
+        "awareness_change": -15,
+        "red_flags": [
+          "Kamu tidak pernah memesan barang COD dari toko tersebut",
+          "Ancaman denda penolakan COD adalah kebohongan — penolakan COD gratis",
+          "Penipu mengirim paket COD ke alamat acak berisi barang murah"
+        ],
+        "safety_tip": "Kamu berhak menolak paket COD yang tidak kamu pesan tanpa biaya apapun. Selalu cek riwayat ordermu sebelum membayar."
+      },
+      {
+        "text": "2. Tolak Paket dan Cek Riwayat Order di Semua Marketplace",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Tepat! Kamu Tidak Pesan Ini",
+        "feedback_message": "Setelah mengecek riwayat belanja di Shopee, Tokopedia, dan Lazada, tidak ada pesanan COD aktif. Kamu berhasil menghindari jebakan paket misterius!",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Paket COD misterius yang tidak ada di riwayat pesanan hampir pasti penipuan"
+        ],
+        "safety_tip": "Jangan pernah membayar paket COD yang tidak ada di riwayat pembelianmu di marketplace resmi."
+      }
+    ]
+  },
+  {
+    "id": "scam_18_voice_phishing_cs",
+    "category": "Voice Phishing (Vishing)",
+    "sender_name": "Telp Masuk: +62 21-500123",
+    "sender_number": "+62 21-500123",
+    "sender_tag": "Nomor Mirip Call Center",
+    "avatar_icon": "📞",
+    "messages": [
+      "[PANGGILAN MASUK] Seseorang menelepon mengaku dari Customer Service GoPay/OVO.",
+      "'Selamat siang, kami mendeteksi transaksi mencurigakan Rp 5.000.000 dari akun GoPay Anda. Untuk keamanan, kami perlu memverifikasi identitas.'",
+      "'Mohon sebutkan 6 digit kode yang baru dikirim ke SMS Anda untuk membatalkan transaksi ilegal tersebut.'"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Sebutkan Kode 6 Digit dari SMS untuk 'Membatalkan Transaksi'",
+        "outcome_type": "trap",
+        "feedback_title": "📞 Terkena Voice Phishing (Vishing)!",
+        "feedback_message": "Kode 6 digit itu adalah OTP untuk mengambil alih akun GoPay/OVO-mu. Saldo e-wallet langsung dikuras oleh pelaku!",
+        "money_change": -1500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "CS resmi tidak pernah meminta kode OTP melalui telepon",
+          "Transaksi 'mencurigakan' Rp 5 juta diciptakan untuk membuat panik",
+          "Nomor +62 21-500xxx bisa dipalsukan dengan teknik caller ID spoofing"
+        ],
+        "safety_tip": "Kode OTP adalah rahasia mutlak. CS resmi manapun tidak akan pernah meminta kode ini lewat telepon."
+      },
+      {
+        "text": "2. Tutup Telepon dan Hubungi CS Resmi via Aplikasi",
+        "outcome_type": "success",
+        "feedback_title": "📱 Respons Sempurna!",
+        "feedback_message": "Kamu langsung menutup telepon dan menghubungi CS GoPay lewat menu Help di dalam aplikasi. Terbukti tidak ada transaksi mencurigakan apapun.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Caller ID bisa dipalsukan (spoofed) sehingga tampil seperti nomor resmi"
+        ],
+        "safety_tip": "Jika menerima telepon mencurigakan, tutup dan hubungi kembali lewat kanal resmi di dalam aplikasi atau website."
+      },
+      {
+        "text": "3. Minta Nama Lengkap dan ID Petugas untuk Dicatat",
+        "outcome_type": "cautious",
+        "feedback_title": "🔎 Bagus Memverifikasi, Tapi Jangan Lanjutkan Percakapan",
+        "feedback_message": "Penipu memberikan nama dan ID palsu yang terdengar meyakinkan. Setidaknya kamu tidak memberikan kode OTP.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Penipu bisa memberikan data identitas palsu yang terdengar profesional"
+        ],
+        "safety_tip": "Langkah terbaik adalah langsung tutup telepon dan verifikasi sendiri lewat kanal resmi."
+      }
+    ]
+  },
+  {
+    "id": "scam_19_deepfake_video_call",
+    "category": "Deepfake & AI Scam",
+    "sender_name": "Video Call dari 'Atasan Kantor'",
+    "sender_number": "+62 815-6677-8899",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "🤖",
+    "messages": [
+      "[VIDEO CALL MASUK] Seseorang menelepon video dan wajahnya sangat mirip dengan bos/dosenmu.",
+      "'Halo, ini Pak Direktur. Saya sedang meeting penting dan butuh kamu transfer dana operasional Rp 3.000.000 segera ke rekening vendor baru ini.'",
+      "'Ini sangat mendesak. Nanti saya ganti. Jangan ceritakan ke siapapun dulu karena ini rahasia perusahaan.'"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Rp 3.000.000 Karena Yakin Itu Memang Atasan",
+        "outcome_type": "trap",
+        "feedback_title": "🤖 Terjebak Deepfake Video Call!",
+        "feedback_message": "Video call tersebut menggunakan teknologi deepfake AI yang memanipulasi wajah dan suara. Atasanmu yang asli tidak pernah meminta transfer seperti itu!",
+        "money_change": -3000000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Permintaan transfer mendesak dan rahasia adalah red flag utama",
+          "Teknologi deepfake bisa meniru wajah dan suara secara real-time",
+          "Atasan profesional menggunakan prosedur resmi untuk transfer dana, bukan chat pribadi",
+          "Diminta untuk tidak bercerita ke siapapun adalah taktik isolasi korban"
+        ],
+        "safety_tip": "Jika atasan meminta transfer dana mendadak, verifikasi lewat saluran komunikasi berbeda (misalnya telepon ke nomor kantor resmi)."
+      },
+      {
+        "text": "2. Minta Verifikasi Lewat Email Kantor Resmi atau Telepon ke Nomor Kantor",
+        "outcome_type": "success",
+        "feedback_title": "🏆 Luar Biasa! Kamu Paham Deepfake",
+        "feedback_message": "Kamu memverifikasi lewat email kantor dan ternyata atasanmu sedang tidak ada meeting apapun. Video call deepfake berhasil kamu patahkan!",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "AI deepfake semakin canggih, selalu verifikasi lewat saluran resmi terpisah"
+        ],
+        "safety_tip": "Di era AI, verifikasi multi-channel menjadi krusial. Jangan pernah transfer uang hanya berdasarkan satu saluran komunikasi."
+      }
+    ]
+  },
+  {
+    "id": "scam_20_phishing_email_univ",
+    "category": "Phishing Email Kampus",
+    "sender_name": "admin-siak@univ-indonesia.web.id",
+    "sender_number": "Email",
+    "sender_tag": "Email Palsu (Bukan @ui.ac.id)",
+    "avatar_icon": "🎓",
+    "messages": [
+      "[EMAIL MASUK] Dari: admin-siak@univ-indonesia.web.id",
+      "Subject: PERINGATAN - Akun SIAK-NG Anda Akan Dinonaktifkan!",
+      "Mahasiswa YTH, akun SIAK Anda akan dinonaktifkan karena belum memperbarui data. Klik link berikut untuk re-aktivasi: https://siak-ng-update.web.id/login"
+    ],
+    "attachment": {
+      "name": "https://siak-ng-update.web.id/login",
+      "type": "link",
+      "size": "Tautan Website"
+    },
+    "choices": [
+      {
+        "text": "1. Klik Link dan Login dengan Akun SIAK (SSO UI)",
+        "outcome_type": "trap",
+        "feedback_title": "🎓 Akun Akademikmu Dicuri!",
+        "feedback_message": "Domain .web.id bukan domain resmi UI (.ui.ac.id). Penipu mendapatkan username dan password SSO-mu, bisa mengubah KRS, melihat data pribadi, bahkan mengakses email kampus!",
+        "money_change": 0,
+        "awareness_change": -25,
+        "red_flags": [
+          "Domain pengirim @univ-indonesia.web.id bukan domain resmi @ui.ac.id",
+          "URL login palsu menggunakan domain .web.id bukan siak.ui.ac.id",
+          "Universitas tidak mengancam penonaktifan akun via email tanpa pemberitahuan resmi"
+        ],
+        "safety_tip": "Selalu periksa domain pengirim email dan URL login. Domain resmi universitas menggunakan .ac.id."
+      },
+      {
+        "text": "2. Abaikan dan Cek Langsung di siak.ui.ac.id Resmi",
+        "outcome_type": "success",
+        "feedback_title": "✅ Mahasiswa Digital Savvy!",
+        "feedback_message": "Kamu membuka SIAK langsung dari bookmark browser dan akunmu baik-baik saja. Email tadi hanyalah phishing.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Selalu akses portal kampus dari bookmark atau ketik URL langsung, bukan dari link email"
+        ],
+        "safety_tip": "Bookmark URL resmi layanan penting (kampus, bank, e-commerce) dan selalu akses dari bookmark tersebut."
+      }
+    ]
+  },
+  {
+    "id": "scam_21_social_media_giveaway",
+    "category": "Penipuan Giveaway Palsu",
+    "sender_name": "Akun @ElonMuskID_Official",
+    "sender_number": "DM Instagram",
+    "sender_tag": "Akun Palsu",
+    "avatar_icon": "🌟",
+    "messages": [
+      "[DM INSTAGRAM] Congratulations! Anda terpilih dalam Crypto Giveaway kami!",
+      "Kirimkan 0.1 ETH (sekitar Rp 3.000.000) ke wallet address berikut, dan kami akan mengembalikan 10x lipat (1 ETH) dalam 24 jam!",
+      "Ini program eksklusif untuk 100 orang terpilih. Promo berlaku hari ini saja! 🚀"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Kirim 0.1 ETH untuk Mendapatkan 10x Lipat",
+        "outcome_type": "trap",
+        "feedback_title": "💸 Kena Scam Giveaway Crypto Palsu!",
+        "feedback_message": "Tidak ada giveaway yang meminta kamu mengirim uang/crypto terlebih dahulu. Ini adalah penipuan klasik 'send-to-receive' yang sudah menelan miliaran rupiah dari korban di seluruh dunia.",
+        "money_change": -3000000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Giveaway asli TIDAK PERNAH meminta kamu mengirim uang/crypto duluan",
+          "Akun menggunakan nama selebriti/tokoh terkenal untuk membangun kepercayaan palsu",
+          "Janji return 10x lipat dalam 24 jam adalah mustahil"
+        ],
+        "safety_tip": "Aturan emas: giveaway asli memberi GRATIS, tidak meminta kamu membayar apapun terlebih dahulu."
+      },
+      {
+        "text": "2. Laporkan Akun sebagai Penipuan dan Blokir",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Kamu Paham Modus Giveaway Palsu!",
+        "feedback_message": "Kamu melaporkan akun palsu tersebut ke Instagram dan membantut penyebarannya ke korban lain. Crypto dan uangmu tetap aman.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Akun impersonator selebriti/tokoh terkenal adalah red flag utama"
+        ],
+        "safety_tip": "Akun resmi tokoh publik selalu terverifikasi (centang biru). Giveaway asli tidak meminta kamu mengirim uang."
+      }
+    ]
+  },
+  {
+    "id": "legit_22_otp_transaksi_nyata",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "GOPAY",
+    "sender_number": "GOPAY",
+    "sender_tag": "SMS Resmi Terverifikasi",
+    "avatar_icon": "💚",
+    "messages": [
+      "[SMS dari GOPAY] Kode verifikasi Anda: 847291. JANGAN BERIKAN kode ini kepada siapapun termasuk pihak yang mengaku dari GoPay.",
+      "Kode berlaku 5 menit. Jika Anda tidak meminta kode ini, abaikan pesan ini.",
+      "Kamu memang sedang top-up GoPay Rp 100.000 dari m-banking."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Masukkan Kode ke Aplikasi GoPay untuk Menyelesaikan Top-Up",
+        "outcome_type": "success",
+        "feedback_title": "✅ Benar! Ini OTP untuk Transaksimu Sendiri",
+        "feedback_message": "Kamu memang sedang melakukan top-up GoPay. OTP ini sah untuk transaksi yang kamu inisiasi sendiri. Memasukkannya di aplikasi resmi adalah tindakan yang benar.",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags. OTP ini diminta oleh transaksi yang kamu sendiri lakukan di aplikasi resmi"
+        ],
+        "safety_tip": "OTP boleh dimasukkan HANYA di aplikasi resmi yang memintanya. Jangan pernah sebutkan ke orang lain via telepon atau chat."
+      },
+      {
+        "text": "2. Abaikan OTP dan Batalkan Top-Up karena Takut Penipuan",
+        "outcome_type": "cautious",
+        "feedback_title": "😅 Terlalu Paranoid Kali Ini",
+        "feedback_message": "OTP ini memang untuk transaksi top-up yang kamu sendiri lakukan. Membatalkannya justru membuatmu tidak bisa menyelesaikan top-up yang kamu butuhkan.",
+        "money_change": 0,
+        "awareness_change": -5,
+        "red_flags": [
+          "Penting membedakan OTP yang kamu minta sendiri vs yang tiba-tiba datang tanpa transaksi"
+        ],
+        "safety_tip": "OTP yang datang setelah kamu sendiri memulai transaksi di aplikasi resmi itu SAH. Yang berbahaya adalah OTP yang tiba-tiba muncul tanpa kamu minta."
+      }
+    ]
+  },
+  {
+    "id": "scam_23_sim_swap_fraud",
+    "category": "SIM Swap Fraud",
+    "sender_name": "Telkomsel Customer Care",
+    "sender_number": "+62 812-0000-1234",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "📱",
+    "messages": [
+      "Yth. Pelanggan Telkomsel,",
+      "Nomor Anda terdeteksi rentan terhadap penyadapan. Untuk peningkatan keamanan, kami perlu memverifikasi data Anda.",
+      "Mohon kirimkan: (1) Foto KTP, (2) Nomor KK, dan (3) Nama Ibu Kandung Anda untuk proses peningkatan keamanan SIM card."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Kirimkan Foto KTP, Nomor KK, dan Nama Ibu Kandung",
+        "outcome_type": "trap",
+        "feedback_title": "🆘 Data Pribadimu Dicuri untuk SIM Swap!",
+        "feedback_message": "Pelaku menggunakan datamu untuk mengajukan penggantian SIM card ke outlet Telkomsel. Nomormu berpindah ke SIM baru milik penipu, dan semua OTP m-banking masuk ke mereka!",
+        "money_change": -2500000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Operator seluler tidak pernah meminta foto KTP, KK, atau nama ibu kandung lewat chat",
+          "Data nama ibu kandung adalah kunci keamanan perbankan tertinggi",
+          "Nomor pengirim bukan kanal resmi Telkomsel"
+        ],
+        "safety_tip": "Nama Ibu Kandung, NIK KTP, dan Nomor KK adalah data super sensitif. JANGAN pernah berikan lewat chat atau telepon kepada siapapun!"
+      },
+      {
+        "text": "2. Tolak dan Datangi GraPARI Telkomsel Resmi Jika Diperlukan",
+        "outcome_type": "success",
+        "feedback_title": "🔐 Data Pribadimu Terlindungi!",
+        "feedback_message": "Kamu menolak memberikan data sensitif via chat. Jika memang ada masalah SIM card, penanganan dilakukan langsung di outlet resmi dengan identitas fisik.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Verifikasi keamanan SIM card hanya dilakukan tatap muka di outlet resmi operator"
+        ],
+        "safety_tip": "Data KTP, KK, dan Nama Ibu Kandung tidak boleh diberikan lewat jalur apapun selain proses resmi tatap muka."
+      }
+    ]
+  },
+  {
+    "id": "scam_24_fake_charity",
+    "category": "Penipuan Donasi / Amal Palsu",
+    "sender_name": "Yayasan Peduli Anak Bangsa",
+    "sender_number": "+62 858-3344-5566",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "🙏",
+    "messages": [
+      "Assalamu'alaikum Kak, kami dari Yayasan Peduli Anak Bangsa sedang menggalang dana untuk operasi anak-anak penderita kanker di pedalaman.",
+      "Sudah ada 200+ donatur yang berpartisipasi (bukti transfer terlampir).",
+      "Mohon bantuannya berapapun ke rekening BCA 123-456-789 a/n Supriadi untuk biaya pengobatan mereka. Semoga menjadi ladang amal 🤲"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Donasi ke Rekening Pribadi yang Disebutkan",
+        "outcome_type": "trap",
+        "feedback_title": "😢 Donasi Masuk ke Kantong Penipu!",
+        "feedback_message": "Yayasan tersebut fiktif dan rekening tujuan adalah rekening perorangan. Uangmu tidak sampai ke anak-anak yang membutuhkan.",
+        "money_change": -500000,
+        "awareness_change": -15,
+        "red_flags": [
+          "Rekening donasi menggunakan nama perorangan (a/n Supriadi), bukan nama yayasan resmi",
+          "Yayasan resmi memiliki nomor registrasi Kemenkumham dan rekening institusi",
+          "Bukti transfer dari donatur lain bisa dipalsukan"
+        ],
+        "safety_tip": "Donasi melalui platform terpercaya seperti Kitabisa.com, Dompet Dhuafa, atau rekening resmi yayasan terverifikasi."
+      },
+      {
+        "text": "2. Cek Legalitas Yayasan dan Donasi Lewat Platform Terpercaya",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Dermawan yang Cerdas!",
+        "feedback_message": "Kamu memverifikasi dulu dan menemukan yayasan tersebut tidak terdaftar di Kemenkumham. Kamu memilih menyalurkan donasi lewat platform crowdfunding terpercaya.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Galang dana dengan rekening perorangan adalah tanda penipuan donasi"
+        ],
+        "safety_tip": "Donasi lewat platform resmi yang terverifikasi. Cek legalitas yayasan di ahu.go.id sebelum menyumbang."
+      }
+    ]
+  },
+  {
+    "id": "legit_25_notif_update_app",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "Google Play Store",
+    "sender_number": "Notifikasi Sistem",
+    "sender_tag": "Notifikasi Resmi Perangkat",
+    "avatar_icon": "🔄",
+    "messages": [
+      "[NOTIFIKASI GOOGLE PLAY] Pembaruan tersedia untuk 5 aplikasi:",
+      "• WhatsApp (v2.26.11) - Perbaikan keamanan\n• Instagram (v326.0) - Bug fixes\n• Chrome (v131.0) - Patch kerentanan kritis",
+      "Ketuk untuk memperbarui semua aplikasi dari Play Store."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Update Semua Aplikasi dari Google Play Store",
+        "outcome_type": "success",
+        "feedback_title": "✅ Ini Pembaruan Resmi yang Penting!",
+        "feedback_message": "Memperbarui aplikasi dari Google Play Store resmi adalah praktik keamanan yang sangat baik. Patch keamanan melindungimu dari kerentanan yang sudah diketahui.",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags. Ini adalah notifikasi resmi dari Google Play Store di perangkatmu"
+        ],
+        "safety_tip": "Selalu update aplikasi dari toko resmi (Play Store/App Store). Update mengandung patch keamanan penting."
+      },
+      {
+        "text": "2. Abaikan Update karena Takut Malware",
+        "outcome_type": "cautious",
+        "feedback_title": "😕 Update Resmi Justru Melindungimu",
+        "feedback_message": "Menunda update dari toko resmi justru membuat perangkatmu rentan terhadap eksploitasi keamanan yang sudah ditemukan.",
+        "money_change": 0,
+        "awareness_change": -5,
+        "red_flags": [
+          "Update dari Play Store resmi berbeda dengan file .apk yang dikirim orang asing lewat chat"
+        ],
+        "safety_tip": "Aktifkan auto-update di Google Play Store agar aplikasimu selalu mendapat patch keamanan terbaru."
+      }
+    ]
+  },
+  {
+    "id": "scam_26_password_reuse_breach",
+    "category": "Keamanan Password & Data Breach",
+    "sender_name": "Notifikasi Keamanan Chrome",
+    "sender_number": "Browser Chrome",
+    "sender_tag": "Peringatan Sistem Resmi",
+    "avatar_icon": "🔑",
+    "messages": [
+      "[PERINGATAN CHROME] Password Anda untuk akun 'tokopedia.com' ditemukan dalam kebocoran data (data breach).",
+      "Password yang sama juga digunakan di 4 situs lain: email, Instagram, m-banking, dan kampus.",
+      "Apa yang akan kamu lakukan?"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Abaikan Peringatan, Passwordku Sudah Cukup Kuat",
+        "outcome_type": "trap",
+        "feedback_title": "🔓 Semua Akunmu Dalam Bahaya!",
+        "feedback_message": "Jika satu password bocor dan dipakai di banyak akun (password reuse), hacker bisa mengakses SEMUA akunmu lewat credential stuffing! Email, m-banking, medsos, semua terekspos.",
+        "money_change": -1000000,
+        "awareness_change": -20,
+        "red_flags": [
+          "Menggunakan password yang sama di banyak situs adalah risiko keamanan terbesar",
+          "Data breach membuat password tersebar di forum hacker",
+          "Credential stuffing otomatis mencoba password bocor di ribuan situs"
+        ],
+        "safety_tip": "JANGAN PERNAH gunakan password yang sama di lebih dari satu situs. Gunakan password manager seperti Bitwarden atau Google Password Manager."
+      },
+      {
+        "text": "2. Segera Ganti Password di Semua Akun dan Aktifkan 2FA",
+        "outcome_type": "success",
+        "feedback_title": "🔐 Respons Keamanan Sempurna!",
+        "feedback_message": "Kamu langsung mengganti password di semua akun yang terdampak dengan password unik berbeda-beda dan mengaktifkan 2FA. Semua akunmu sekarang aman!",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Peringatan data breach dari browser resmi adalah peringatan nyata yang perlu ditindaklanjuti"
+        ],
+        "safety_tip": "Gunakan password unik untuk setiap akun + password manager + 2FA. Cek apakah datamu bocor di haveibeenpwned.com."
+      }
+    ]
+  },
+  {
+    "id": "scam_27_sextortion",
+    "category": "Pemerasan Digital (Sextortion)",
+    "sender_name": "Nomor Tidak Dikenal",
+    "sender_number": "+62 823-9988-7766",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "⚠️",
+    "messages": [
+      "Saya memiliki video dan foto pribadi Anda yang sangat memalukan. Saya rekam dari webcam Anda.",
+      "Jika tidak ingin saya sebarkan ke seluruh kontak dan media sosial Anda, transfer Rp 5.000.000 ke rekening berikut dalam 48 jam.",
+      "Ini bukan main-main. Kalau tidak percaya, cek email Anda — saya sudah kirim sample. JANGAN hubungi polisi atau video akan tersebar!"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Transfer Rp 5.000.000 Karena Panik dan Takut Malu",
+        "outcome_type": "trap",
+        "feedback_title": "💀 Kena Sextortion Scam!",
+        "feedback_message": "Penipu mengirim pesan massal ini ke ribuan orang dan TIDAK memiliki video/foto apapun darimu. Membayar hanya membuat mereka meminta lebih banyak uang!",
+        "money_change": -5000000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Pesan dikirim massal ke banyak nomor — penipu tidak benar-benar memiliki data pribadimu",
+          "Ancaman 'jangan hubungi polisi' adalah taktik isolasi",
+          "Jika memang punya bukti, penipu akan langsung menunjukkannya, bukan mengancam"
+        ],
+        "safety_tip": "Pesan pemerasan massal (sextortion) hampir selalu hoaks. Jangan bayar — laporkan ke polisi siber (patrolisiber.id)."
+      },
+      {
+        "text": "2. Abaikan, Blokir, dan Laporkan ke Polisi Siber",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Tenang dan Tepat!",
+        "feedback_message": "Kamu tidak terpengaruh ancaman kosong dan melaporkan nomor tersebut. Pesan ini dikirim ke ribuan nomor acak — pelaku tidak punya data pribadimu.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Sextortion massal mengandalkan ketakutan korban, bukan bukti nyata"
+        ],
+        "safety_tip": "Jika menerima pesan pemerasan, jangan panik. Laporkan ke patrolisiber.id atau Bareskrim 110."
+      }
+    ]
+  },
+  {
+    "id": "scam_28_lowongan_data_entry",
+    "category": "Modus Lowongan Kerja Online (Job Scam)",
+    "sender_name": "PT. Digital Solutions Indonesia",
+    "sender_number": "+62 896-1234-5678",
+    "sender_tag": "Pesan Masuk Tanpa Undangan",
+    "avatar_icon": "💻",
+    "messages": [
+      "LOWONGAN DATA ENTRY REMOTE! Kerja dari rumah, waktu fleksibel.",
+      "Gaji: Rp 8.000.000 - Rp 15.000.000/bulan. Hanya butuh laptop dan internet.",
+      "Untuk proses rekrutmen, silakan isi formulir dan bayar biaya administrasi + pelatihan sertifikasi Rp 750.000 (one time only). Dijamin langsung diterima kerja!"
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Bayar Rp 750.000 untuk Biaya Admin dan Sertifikasi",
+        "outcome_type": "trap",
+        "feedback_title": "❌ Lowongan Kerja Palsu!",
+        "feedback_message": "Perusahaan resmi TIDAK memungut biaya dari pelamar. Setelah bayar, kamu diminta bayar lagi untuk 'aktivasi akun', 'deposit proyek', dll. Total kerugian terus bertambah!",
+        "money_change": -750000,
+        "awareness_change": -20,
+        "red_flags": [
+          "Pekerjaan resmi tidak memungut biaya pendaftaran, administrasi, atau sertifikasi",
+          "Gaji terlalu tinggi untuk posisi entry-level tanpa pengalaman",
+          "Jaminan 'langsung diterima' tanpa seleksi adalah red flag besar"
+        ],
+        "safety_tip": "Perusahaan yang meminta uang dari pelamar kerja 100% penipuan. Lamar pekerjaan hanya melalui portal resmi."
+      },
+      {
+        "text": "2. Tolak dan Cari Lowongan di Portal Karier Terpercaya",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Langkah yang Benar!",
+        "feedback_message": "Kamu mengecek dan PT tersebut tidak terdaftar di KEMENAKER. Kamu melamar pekerjaan lewat Glints, LinkedIn, dan Jobstreet dengan aman.",
+        "money_change": 0,
+        "awareness_change": 15,
+        "red_flags": [
+          "Pekerjaan yang mensyaratkan pembayaran dari pelamar adalah penipuan"
+        ],
+        "safety_tip": "Cek keberadaan perusahaan di ahu.go.id dan lamar hanya lewat portal karier resmi."
+      }
+    ]
+  },
+  {
+    "id": "scam_29_whatsapp_hijack",
+    "category": "Pembajakan Akun WhatsApp",
+    "sender_name": "WhatsApp Security",
+    "sender_number": "+1 650-555-0199",
+    "sender_tag": "Nomor Asing Luar Negeri",
+    "avatar_icon": "💬",
+    "messages": [
+      "Your WhatsApp account has been reported for suspicious activity and will be deactivated.",
+      "To verify your identity and prevent deactivation, please reply with the 6-digit code sent to your phone via SMS.",
+      "Failure to verify within 30 minutes will result in permanent account suspension."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Balas dengan Kode 6 Digit yang Masuk via SMS",
+        "outcome_type": "trap",
+        "feedback_title": "💬 WhatsApp-mu Dibajak!",
+        "feedback_message": "Kode 6 digit itu adalah kode registrasi WhatsApp. Dengan memberikannya, pelaku bisa mengambil alih akun WA-mu dan menipu semua kontakmu!",
+        "money_change": 0,
+        "awareness_change": -25,
+        "red_flags": [
+          "WhatsApp tidak pernah menghubungi pengguna lewat chat untuk verifikasi akun",
+          "Nomor luar negeri (+1) bukan nomor resmi WhatsApp",
+          "Kode registrasi WA adalah kode super rahasia yang tidak boleh dibagikan"
+        ],
+        "safety_tip": "Aktifkan Verifikasi Dua Langkah (Two-Step Verification) di WhatsApp > Settings > Account > Two-step verification."
+      },
+      {
+        "text": "2. Abaikan dan Aktifkan Two-Step Verification di WhatsApp",
+        "outcome_type": "success",
+        "feedback_title": "🔐 Akun WA-mu Aman!",
+        "feedback_message": "Kamu tidak tertipu pesan palsu dan malah memperkuat keamanan WA dengan mengaktifkan PIN Two-Step Verification.",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "WhatsApp tidak pernah menghubungi pengguna lewat chat WhatsApp"
+        ],
+        "safety_tip": "Selalu aktifkan Two-Step Verification di semua akun penting untuk perlindungan ekstra."
+      }
+    ]
+  },
+  {
+    "id": "legit_30_teman_kirim_tugas",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "Rina (Teman Sekelas)",
+    "sender_number": "+62 812-7777-8888",
+    "sender_tag": "Kontak Tersimpan di Buku Telepon",
+    "avatar_icon": "👩‍💻",
+    "messages": [
+      "Hai! Aku mau share rangkuman materi DDP 1 yang aku buat kemarin buat belajar UAS nanti.",
+      "Aku upload ke Google Drive ya, ini linknya: https://drive.google.com/file/d/abc123/view",
+      "Semoga membantu! Kalau ada yang kurang jelas, tanya aja 😊"
+    ],
+    "attachment": {
+      "name": "https://drive.google.com/file/d/abc123/view",
+      "type": "link",
+      "size": "Google Drive"
+    },
+    "choices": [
+      {
+        "text": "1. Buka Link Google Drive dan Download Rangkuman",
+        "outcome_type": "success",
+        "feedback_title": "📚 Benar! Ini Pesan Sah dari Teman",
+        "feedback_message": "Link Google Drive resmi dari teman yang tersimpan di kontak, tanpa permintaan uang atau data sensitif. Ini adalah komunikasi normal yang aman.",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags. Kontak tersimpan, link dari domain resmi (drive.google.com), dan konteksnya wajar"
+        ],
+        "safety_tip": "Pesan dari kontak dikenal + link domain resmi + tanpa permintaan aneh = komunikasi normal. Tetap perhatikan konteks!"
+      },
+      {
+        "text": "2. Tolak dan Blokir Rina karena Curiga Link Berbahaya",
+        "outcome_type": "trap",
+        "feedback_title": "😅 Terlalu Paranoid!",
+        "feedback_message": "Rina benar-benar berbagi rangkuman belajar denganmu. Link drive.google.com adalah domain resmi Google. Kamu jadi kehilangan sumber belajar yang berguna!",
+        "money_change": 0,
+        "awareness_change": -10,
+        "red_flags": [
+          "Jangan asal blokir kontak yang dikenal tanpa menganalisis konteks pesan terlebih dahulu"
+        ],
+        "safety_tip": "Perhatikan 3 hal: (1) Apakah pengirim dikenal? (2) Apakah domain link resmi? (3) Apakah ada permintaan uang/data?"
+      }
+    ]
   }
 ]
