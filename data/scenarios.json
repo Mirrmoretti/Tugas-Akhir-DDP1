@@ -1360,5 +1360,144 @@
         "safety_tip": "Perhatikan 3 hal: (1) Apakah pengirim dikenal? (2) Apakah domain link resmi? (3) Apakah ada permintaan uang/data?"
       }
     ]
+  },
+  {
+    "id": "scam_31_salah_transfer_pinjol",
+    "category": "Modus Jebakan Pinjol Ilegal",
+    "sender_name": "Nomor Tidak Dikenal",
+    "sender_number": "+62 877-4411-9088",
+    "sender_tag": "Nomor Asing",
+    "avatar_icon": "💸",
+    "messages": [
+      "Permisi Kak, maaf mengganggu. Tadi saya salah ketik nomor rekening waktu transfer dana sebesar Rp 1.500.000 dan masuk ke rekening Kakak.",
+      "Uang itu untuk biaya berobat anak saya hari ini. Tolong banget kembalikan ke rekening BCA 4490128831 a.n. Hendra Wijaya sekarang ya Kak 🙏",
+      "Sebagai tanda terima kasih, Kakak boleh potong Rp 100.000 buat jajan."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Balas Chat dan Minta Bukti Struk Transfer dari Pengirim",
+        "outcome_type": "cautious",
+        "feedback_title": "🔎 Hati-Hati, Struk Bisa Diedit!",
+        "feedback_message": "Pelaku mengirimkan bukti transfer editan dan terus menelepon sambil menangis memohon. Setidaknya kamu menahan diri untuk tidak langsung mentransfer uangnya.",
+        "money_change": 0,
+        "awareness_change": 5,
+        "red_flags": [
+          "Bukti transfer sangat mudah dipalsukan dan pelaku akan terus menekan secara emosional"
+        ],
+        "safety_tip": "Jangan mengambil keputusan finansial berdasarkan bukti tangkapan layar dari orang asing; serahkan penyelesaiannya kepada pihak bank."
+      },
+      {
+        "text": "2. Jangan Digunakan & Lapor ke Call Center Resmi Bank untuk Proses Refund",
+        "outcome_type": "success",
+        "feedback_title": "🛡️ Langkah Hukum Paling Aman!",
+        "feedback_message": "Kamu membiarkan dana tersebut mengendap dan melaporkannya ke pihak bank resmi. Bank memblokir dana tersebut untuk dikembalikan ke sistem pengirim asli, sehingga kamu terbebas dari teror penagih pinjol!",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Modus salah transfer adalah trik pencucian dana pinjol ilegal ke rekening korban"
+        ],
+        "safety_tip": "Pihak bank memiliki prosedur resmi penanganan salah transfer tanpa membebankan risiko hukum kepada penerima."
+      },
+      {
+        "text": "3. Langsung Transfer Balik ke Rekening yang Diminta Pengirim",
+        "outcome_type": "trap",
+        "feedback_title": "⚠️ Terjebak Sindikat Pinjol Ilegal!",
+        "feedback_message": "Uang yang masuk ke rekeningmu ternyata adalah pencairan dana dari aplikasi Pinjol Ilegal yang memakai data bocormu! Karena kamu mentransfernya ke rekening pribadi pelaku, tagihan beserta bunga mencekik tetap tercatat atas namamu!",
+        "money_change": -1500000,
+        "awareness_change": -25,
+        "red_flags": [
+          "Meminta pengembalian dana salah transfer ke rekening berbeda dari rekening pengirim awal",
+          "Menggunakan cerita menyedihkan dan iming-iming komisi agar korban buru-buru transfer",
+          "Bank melarang nasabah mengembalikan dana salah transfer secara sepihak tanpa proses mediasi bank"
+        ],
+        "safety_tip": "Jika menerima transfer dana misterius, JANGAN dipakai dan JANGAN ditransfer ke rekening mana pun. Segera lapor ke bank resmi dan OJK agar diproses pengembalian ke sumber aslinya."
+      }
+    ]
+  },
+  {
+    "id": "legit_32_verifikasi_akademik_kampus",
+    "category": "Ujian Naluri (Pesan Sah & Aman)",
+    "sender_name": "Ibu Ratna (Dosen Wali)",
+    "sender_number": "+62 811-8899-2233",
+    "sender_tag": "Kontak Tersimpan di Buku Telepon",
+    "avatar_icon": "👩‍🏫",
+    "messages": [
+      "Selamat pagi, mohon perhatian untuk seluruh mahasiswa bimbingan akademik.",
+      "Pengisian IRS semester depan dibuka mulai besok pukul 08.00 WIB melalui portal resmi akademik.ui.ac.id.",
+      "Silakan konsultasikan rencana mata kuliah kalian sebelum melakukan kunci IRS. Terima kasih."
+    ],
+    "attachment": null,
+    "choices": [
+      {
+        "text": "1. Laporkan Nomor Ibu Ratna sebagai Spam dan Blokir",
+        "outcome_type": "trap",
+        "feedback_title": "😅 Waduh! Itu Dosen Wali Kamu Sendiri",
+        "feedback_message": "Kamu memblokir dosen walimu sendiri padahal tidak ada tautan mencurigakan maupun permintaan uang sama sekali!",
+        "money_change": 0,
+        "awareness_change": -10,
+        "red_flags": [
+          "Pesan tidak mengandung link phishing, lampiran berbahaya, maupun permintaan transfer"
+        ],
+        "safety_tip": "Selalu periksa identitas pengirim dan apakah ada unsur paksaan atau permintaan data rahasia sebelum memblokir."
+      },
+      {
+        "text": "2. Balas Sopan 'Baik Bu, terima kasih infonya' & Akses Portal Resmi Kampus",
+        "outcome_type": "success",
+        "feedback_title": "✅ Tepat! Komunikasi Akademik Sah",
+        "feedback_message": "Kamu berhasil mengenali bahwa pesan ini valid: berasal dari kontak Dosen Wali yang tersimpan, tidak meminta password/OTP, dan merujuk ke domain resmi kampus (.ac.id).",
+        "money_change": 0,
+        "awareness_change": 10,
+        "red_flags": [
+          "Tidak ada red flags! Pengirim terverifikasi di kontak dan tidak ada permintaan data sensitif"
+        ],
+        "safety_tip": "Domain resmi perguruan tinggi di Indonesia selalu berakhiran '.ac.id' dan tidak pernah meminta login lewat formulir pihak ketiga."
+      }
+    ]
+  },
+  {
+    "id": "scam_33_deepfake_voice_ai",
+    "category": "Penipuan AI Voice Cloning",
+    "sender_name": "Ayah (Nomor Darurat)",
+    "sender_number": "+62 823-9012-7744",
+    "sender_tag": "Nomor Tidak Dikenal",
+    "avatar_icon": "🎙️",
+    "messages": [
+      "Nak, ini Ayah pakai nomor polisi. HP Ayah mati total habis kecelakaan ringan di tol, dompet juga ketinggalan di kantor.",
+      "Dengerin voice note Ayah ini ya, tolong transfer Rp 3.000.000 ke rekening petugas derek sekarang biar mobil langsung dievakuasi!"
+    ],
+    "attachment": {
+      "name": "Voice_Note_Ayah_Darurat.ogg",
+      "type": "audio",
+      "size": "420 KB"
+    },
+    "choices": [
+      {
+        "text": "1. Tetap Tenang & Hubungi Langsung Nomor Asli Ayah atau Ibu",
+        "outcome_type": "success",
+        "feedback_title": "🧠 Cerdas Menghadapi Ancaman Era AI!",
+        "feedback_message": "Meski suaranya terdengar sangat mirip, kamu tidak panik dan langsung menelepon nomor asli Ayah serta Ibu. Ternyata Ayah baik-baik saja dan penipuan AI berhasil digagalkan!",
+        "money_change": 0,
+        "awareness_change": 20,
+        "red_flags": [
+          "Taktik kepanikan darurat + nomor baru adalah pola penipuan klasik yang kini diperkuat AI"
+        ],
+        "safety_tip": "Di era kecerdasan buatan (AI), verifikasi lintas saluran (menelepon nomor asli yang tersimpan) adalah pertahanan terbaik."
+      },
+      {
+        "text": "2. Langsung Transfer karena Suara di Voice Note Persis Suara Ayah",
+        "outcome_type": "trap",
+        "feedback_title": "🤖 Terkecoh Teknologi AI Voice Cloning!",
+        "feedback_message": "Penipu kini bisa meniru suara seseorang hanya dari potongan video singkat di media sosial menggunakan AI! Saat kamu telepon nomor asli Ayahmu, ternyata beliau sedang rapat dengan aman.",
+        "money_change": -3000000,
+        "awareness_change": -30,
+        "red_flags": [
+          "Suara AI cloning terdengar mirip, tetapi biasanya intonasinya agak datar dan hanya berupa voice note singkat (tidak mau video call)",
+          "Menggunakan nomor asing dan skenario kecelakaan darurat yang memicu kepanikan",
+          "Meminta transfer segera ke rekening atas nama orang lain"
+        ],
+        "safety_tip": "Jangan langsung percaya pada voice note atau panggilan suara singkat dari nomor asing. Tetapkan 'kata sandi keluarga' (safe word) dan hubungi nomor lama keluarga untuk konfirmasi."
+      }
+    ]
   }
 ]
