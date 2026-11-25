@@ -12,6 +12,7 @@ from config import (
     DATA_SCENARIOS_PATH, DATA_HIGHSCORES_PATH
 )
 from models.scenario import Scenario, Choice
+from utils.sound_helper import play_notification, play_success, play_trap
 
 # Jumlah skenario yang dimainkan per sesi (dipilih acak dari seluruh pool)
 SCENARIOS_PER_GAME = 8
@@ -82,17 +83,20 @@ class GameState:
         # Update Awareness
         self.awareness = max(MIN_AWARENESS, min(MAX_AWARENESS, self.awareness + choice.awareness_change))
         
-        # Hitung Penambahan Skor
+        # Hitung Penambahan Skor & Putar Efek Suara
         score_gain = 0
         if choice.outcome_type == "success":
             self.correct_choices += 1
             score_gain = 100 + (self.awareness // 2)
+            play_success()
         elif choice.outcome_type == "cautious":
             self.cautious_choices += 1
             score_gain = 40
+            play_notification()
         else:  # trap
             self.traps_triggered += 1
             score_gain = 0
+            play_trap()
             
         self.score += score_gain
 
@@ -130,6 +134,7 @@ class GameState:
             self.is_game_over = True
             self.end_reason = "completed"
             return False
+        play_notification()
         return True
 
     def calculate_final_rating(self) -> tuple:

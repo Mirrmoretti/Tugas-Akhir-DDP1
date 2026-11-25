@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "name": "Mahasiswa DDP1",
+        "score": 714,
+        "savings": 5000000,
+        "awareness": 100,
+        "correct": 5,
+        "traps": 2,
+        "status": "completed",
+        "date": "2026-11-25 23:36"
+    }
+]
